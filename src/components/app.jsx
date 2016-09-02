@@ -5,8 +5,10 @@ class App extends Component {
   render() {
     return (
       <div>
-          APP Alive!
+          App Alive!
       </div>
     )
   }
 }
+
+export default App
