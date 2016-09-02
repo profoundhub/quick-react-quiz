@@ -20,12 +20,12 @@
   ],
   "author": "Daniel Lim",
   "license": "ISC",
-  "devDependencies" :{
+  "devDependencies": {
     "babel-core": "5.8.*",
     "babel-loader": "5.3.*",
     "webpack": "1.12.*"
   },
-  "dependencies" : {
+  "dependencies": {
       "react": "^0.14.7",
       "react-dom": "^0.14.7"
   },
