@@ -47,3 +47,4 @@ Temporary Items
 .apdisk
 .ignore
 .private
+ node_modules
