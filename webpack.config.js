@@ -10,7 +10,7 @@ module.export = {
     loaders : [{
       test : /\.jsx?$/,
       loader : "bable",
-      execlude : /node_modules/
+      exclude : /node_modules/
     }]
   }
 }
