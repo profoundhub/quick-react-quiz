@@ -1,0 +1,26 @@
+{
+  "name": "quick-react-quiz",
+  "version": "1.0.0",
+  "description": "Quick React Quiz Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profoundhub/quick-react-quiz.git"
+  },
+  "keywords": [
+    "react",
+    "daniel",
+    "daniel",
+    "lim",
+    "quiz"
+  ],
+  "author": "Daniel Lim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profoundhub/quick-react-quiz/issues"
+  },
+  "homepage": "https://github.com/profoundhub/quick-react-quiz#readme"
+}
