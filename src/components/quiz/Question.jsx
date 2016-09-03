@@ -8,9 +8,11 @@ class Question extends Component {
 
     let selected = e.target.value;
 
-    if (selected === question.correct) {
-      setScore( this.props.score =+ 1);
-    }  
+    if (selected == question.correct) {
+      setScore( this.props.score+1 );
+    }
+
+    setCurrent( this.props.current+1 );
 
   }
 
