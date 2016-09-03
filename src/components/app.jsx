@@ -55,23 +55,23 @@ class App extends Component {
         },
         {
           id: 3,
-          text: 'Is the cup',
+          text: 'Is the cup ... ',
           choices: [
             {
               id: 'a',
-              text: 'Half Full'
+              text: 'Half Full?'
             },
             {
               id: 'b',
-              text: 'Half Empty'
+              text: 'Half Empty?'
             },
             {
               id: 'c',
-              text: 'Not Enough Ice'
+              text: 'Not Enough Ice.'
             },
             {
               id: 'd',
-              text: 'There is no Cup'
+              text: 'There is no Cup!'
             },
           ],
           correct:  'd'
