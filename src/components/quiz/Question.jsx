@@ -5,9 +5,7 @@ class Question extends Component {
   onChange(e) {
     e.preventDefault();
     const { setCurrent, setScore, question } = this.props;
-
     let selected = e.target.value;
-
     if (selected == question.correct) {
       setScore( this.props.score+1 );
     }

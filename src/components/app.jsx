@@ -11,7 +11,7 @@ class App extends Component {
       questions :[
         {
           id: 1,
-          text: 'What is my name?',
+          text: 'What Is My Name?',
           choices: [
             {
               id: 'a',
@@ -34,7 +34,7 @@ class App extends Component {
         },
         {
           id: 2,
-          text: 'What is your favorite Pizza Topping?',
+          text: 'What Is Your Favorite Pizza Topping?',
           choices: [
             {
               id: 'a',
@@ -57,7 +57,7 @@ class App extends Component {
         },
         {
           id: 3,
-          text: 'Is the cup ... ',
+          text: 'Is The Cup ... ',
           choices: [
             {
               id: 'a',
@@ -80,7 +80,7 @@ class App extends Component {
         },
         {
           id: 4,
-          text: 'How should you solve conflict?',
+          text: 'How Should You Solve Conflict?',
           choices: [
             {
               id: 'a',
@@ -103,7 +103,7 @@ class App extends Component {
         },
         {
           id: 5,
-          text: 'How do you feel about God?',
+          text: 'How Do You Feel About God?',
           choices: [
             {
               id: 'a',
@@ -149,12 +149,7 @@ class App extends Component {
     return (
       <div>
           { scoreDiv }
-
-          <QuestionList { ...this.state }
-            setCurrent = { this.setCurrent.bind(this) }
-            setScore = { this.setScore.bind(this) }
-             />
-
+          <QuestionList { ...this.state } setCurrent = { this.setCurrent.bind(this) } setScore = { this.setScore.bind(this) } />
           { results }
       </div>
     )
