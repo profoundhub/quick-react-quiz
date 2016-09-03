@@ -2,8 +2,16 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 class Question extends Component {
-  onChange() {
-    return;
+  onChange(e) {
+    e.preventDefault();
+    const { setCurrent, setScore, question } = this.props;
+
+    let selected = e.target.value;
+
+    if correct === correct
+    then set setScore();
+    current score =+ 1 ;
+    
   }
 
   render() {
