@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import QuestionList from "./quiz/QuestionList.jsx";
 import Scores from "./quiz/Scores.jsx";
+import Results from "./quiz/Results.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -140,6 +141,7 @@ class App extends Component {
   render() {
     if (this.state.current > this.state.questions.length) {
       var scoreDiv = "";
+      var results = <Results { ...this.state } />
     } else {
       var scoreDiv = <Scores { ...this.state } />
     }
@@ -147,10 +149,13 @@ class App extends Component {
     return (
       <div>
           { scoreDiv }
+
           <QuestionList { ...this.state }
             setCurrent = { this.setCurrent.bind(this) }
             setScore = { this.setScore.bind(this) }
              />
+
+          { results }
       </div>
     )
   }
