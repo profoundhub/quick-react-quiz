@@ -121,15 +121,16 @@ class App extends Component {
           ],
           correct:  'a'
         },
-      ]
+      ],
+      score: 0,
+      current: 1
     }
   }
-
 
   render() {
     return (
       <div>
-          App Alive!
+          questions
       </div>
     )
   }
