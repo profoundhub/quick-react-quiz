@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 
 class Question extends Component {
   render() {
-    const { question }
+    const { question } = this.props;
     return (
       <div className="well">
         <h3>{ question.text }</h3>
           <hr />
-        <ul>
+        <ul className="list-group">
             {
                 this.props.question.choices.map(choice=> {
                   return (
