@@ -10,7 +10,7 @@ class App extends Component {
       questions :[
         {
           id: 1,
-          text: 'What is your name?',
+          text: 'What is my name?',
           choices: [
             {
               id: 'a',

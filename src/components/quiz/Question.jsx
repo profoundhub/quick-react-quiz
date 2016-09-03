@@ -11,9 +11,7 @@ class Question extends Component {
     if (selected == question.correct) {
       setScore( this.props.score+1 );
     }
-
     setCurrent( this.props.current+1 );
-
   }
 
   render() {
