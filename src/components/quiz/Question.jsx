@@ -8,10 +8,10 @@ class Question extends Component {
 
     let selected = e.target.value;
 
-    if correct === correct
-    then set setScore();
-    current score =+ 1 ;
-    
+    if (selected === question.correct) {
+      setScore( this.props.score =+ 1);
+    }  
+
   }
 
   render() {
