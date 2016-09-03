@@ -5,11 +5,11 @@ class Results extends Component {
   render() {
     var percent = (this.props.score / this.props.questions.length * 100);
     if (percent > 80) {
-        var message = "You are Awesome!";
+        var message = "Not Sure If In Love or Just ... ?";
     } else if (percent < 80 && percent > 60) {
-      var message = "Not Sure If In Love or Just ... ?";        
+      var message = "You Know Nothing, Jon Snow.";
     } else {
-      var message = "You Know Nothing, Jon Snow";
+      var message = "You Get Nothing! You Lose! Good Day, Sir! <!-- Part of a series on Willy Wonka & The Chocolate Factory. -->";
     }
     return (
       <div className="well">
