@@ -18,9 +18,8 @@ class Results extends Component {
       <div className="well">
         <h4>You Got { this.props.score } out of {this.props.questions.length } Correct! </h4>
         <h1> { percent } % - { message } </h1> { cite }
-
       <hr />
-        <a href=".">Take the Quiz Again!</a>
+        <a href=".">Take The Quiz Again!</a>
       </div>
     )
   }
