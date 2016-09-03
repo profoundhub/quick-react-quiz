@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import QuestionList from "./quiz/QuestionList.jsx";
+import Scores from "./quiz/Scores.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -133,12 +134,13 @@ class App extends Component {
   }
 
   setScore(score) {
-    this.setScore({ score });
+    this.setState({ score });
   }
 
   render() {
     return (
       <div>
+          <Scores {...this.state} />
           <QuestionList { ...this.state }
             setCurrent = { this.setCurrent.bind(this) }
             setScore = { this.setScore.bind(this) }
