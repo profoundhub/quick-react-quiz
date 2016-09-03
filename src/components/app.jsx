@@ -138,9 +138,15 @@ class App extends Component {
   }
 
   render() {
+    if (this.state.current > this.state.questions.length) {
+      var scoreDiv = "";
+    } else {
+      var scoreDiv = <Scores { ...this.state } />
+    }
+
     return (
       <div>
-          <Scores {...this.state} />
+          { scoreDiv }
           <QuestionList { ...this.state }
             setCurrent = { this.setCurrent.bind(this) }
             setScore = { this.setScore.bind(this) }
