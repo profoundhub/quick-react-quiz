@@ -1,16 +1,26 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-class Scores extends Component {
-
+class Results extends Component {
   render() {
+    var percent = (this.props.score / this.props.questions.length * 100);
+    if (percent > 80) {
+        var message = "You are Awesome!";
+    } else if (percent < 80 && percent > 60) {
+      var message = "Not Sure If In Love or Just ... ?";        
+    } else {
+      var message = "You Know Nothing, Jon Snow";
+    }
     return (
       <div className="well">
-        Question {this.props.current} out of {this.props.questions.length}
-        <span className="pull-right"><strong>Score: { this.props.score }</strong></span>
+        <h4>You Got { this.props.score } out of {this.props.questions.length } Correct! </h4>
+        <h1> { percent } % - { message } </h1>
+
+      <hr />
+        <a href=".">Take the Quiz Again!</a>
       </div>
     )
   }
 }
 
-export default Scores
+export default Results
