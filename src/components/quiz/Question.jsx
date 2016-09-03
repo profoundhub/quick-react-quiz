@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 class Question extends Component {
+  onChange() {
+    return;
+  }
+
   render() {
     const { question } = this.props;
     return (
@@ -12,7 +16,7 @@ class Question extends Component {
             {
                 this.props.question.choices.map(choice=> {
                   return (
-                    <li className="list-group-item">
+                    <li className="list-group-item" key={ choice.id }>
                       { choice.id }
                         <input
                           type="radio"
