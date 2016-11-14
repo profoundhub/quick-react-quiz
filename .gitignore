@@ -20,6 +20,8 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+/4me
+.privates
 
 # OSX
 # =========================
@@ -47,4 +49,7 @@ Temporary Items
 .apdisk
 .ignore
 .private
- node_modules
+
+/node_modules
+yarn-error.log
+npm-debug.log
