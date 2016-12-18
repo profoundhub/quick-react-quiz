@@ -51,5 +51,6 @@ Temporary Items
 .private
 
 /node_modules
+node_modules
 yarn-error.log
 npm-debug.log
